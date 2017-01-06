@@ -1,7 +1,7 @@
 
 html body{
   background-color: #ecedec;
-  min-height: 5000px;
+  /*min-height: 5000px;*/
   margin-top:0;
   width:97vw;
 }
@@ -43,6 +43,7 @@ html body{
 #sideBar ul {
   list-style: none;
   /*position:fixed;*/
+  padding-left:5px;
 
 }
 #sideBar .content-fix{
@@ -55,7 +56,9 @@ html body{
 }
 #sideBar ul li{
   color:white;
-  border-top:
+  border-top:1px solid darkgray;
+  border-bottom:1px solid darkgray;
+
 }
 #sideBar ul li a{
   color:white;
