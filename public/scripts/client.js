@@ -18,10 +18,9 @@ $scope.words = {
 .directive('myWords', function(){
   return{
     restrict: 'E',
-    templateUrl:'./partials/words.html'
-//     link: function(scope, element, attrs) {
-//   scope.config = config;
-// }
+    templateUrl:'./views/partials/words.html',
+    replace : true
+
   };
 
 });//mywords

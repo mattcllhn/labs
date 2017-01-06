@@ -3,7 +3,7 @@ html body{
   background-color: #ecedec;
   min-height: 5000px;
   margin-top:0;
-  /*width:97vw;*/
+  width:97vw;
 }
 .page-wrapper{
   height:100%;
@@ -26,7 +26,7 @@ html body{
 }
 .header-nav ul li{
   display:inline-block;
-  width:33%;
+  width:32%;
   /*border:1px solid #ecedec;*/
   padding:1px;
   color:white;
@@ -48,10 +48,17 @@ html body{
 #sideBar .content-fix{
   position:fixed;
   background-color: #464442;
-  width: 14.66666667%;
+  width: 23%;
   height:100vh;
   padding:5px;
 
+}
+#sideBar ul li{
+  color:white;
+  border-top:
+}
+#sideBar ul li a{
+  color:white;
 }
 #controllerDiv{
   height:100%;
