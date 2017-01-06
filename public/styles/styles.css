@@ -3,6 +3,7 @@ html body{
   background-color: #ecedec;
   min-height: 5000px;
   margin-top:0;
+  /*width:97vw;*/
 }
 .page-wrapper{
   height:100%;
@@ -16,21 +17,25 @@ html body{
 .header h1{
   margin:0;
 }
-.header ul{
+.header-nav{
+  background-color: #A03133;
+}
+.header-nav ul{
   list-style: none;
   padding-left: 0;
 }
-.header ul li{
+.header-nav ul li{
   display:inline-block;
   width:33%;
-  border:1px solid #ecedec;
+  /*border:1px solid #ecedec;*/
   padding:1px;
+  color:white;
 }
 #sideBarRow{
   height:100%;
 }
 #sideBar{
-  background-color: #464442;
+  /*background-color: #464442;*/
   min-height: 1000px;
   height:100vh;
   color:white;
@@ -43,7 +48,7 @@ html body{
 #sideBar .content-fix{
   position:fixed;
   background-color: #464442;
-  width: 15.66666667%;
+  width: 14.66666667%;
   height:100vh;
   padding:5px;
 
@@ -52,15 +57,26 @@ html body{
   height:100%;
 }
 
-
+/*concord color #A03133*/
 .contentBody{
   background-color: white;
-  min-height:500px;
+  /*min-height:500px;*/
   height:100%;
   width: 100%;
   padding:30px;
   margin: 25px 0;
 }
-.contentBody img{
+
+.contentBody .img-wrapper{
   width:100%;
+}
+.contentBody .img-wrapper img{
+  width:70%;
+  height:auto;
+}
+.button{
+  background-color: red;
+}
+.green{
+  background-color: green;
 }
