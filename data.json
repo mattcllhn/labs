@@ -1,6 +1,17 @@
-{
-  "setup":{},
-  "Deploying the Application in Tomcat":{}
-
-
+"ex3":{
+  "title":"Health Enrollment Lab Exercise Part 3",
+  "chapters":{
+      "Prerequisite Software":{
+          "list":["JDK 1.8","Eclipse 4.6 or newer","MySQL 5.7 or newer","Tomcat 8.5","SourceTree 1.9","Chrome browser"],
+          "paragraph":"Before you begin part 3 of the lab, you must complete parts 1 and 2. You won’t be able to do these exercises without having a functional RestService running on Tomcat. In part 3 you will create an integration test plan using SOAPUI, debug services in Tomcat, handle errors, create a war file, build the webpages and make a build script."
+      },
+      "Create Integration Tests with SOAPUI":[
+        {"label":"1.	Start SOAPUI",
+          "image":""
+        }
+      ],
+      "Deploying the Application in Tomcat":{},
+      "Create Webpages":{},
+      "Create Build Scripts":{}
+}
 }
