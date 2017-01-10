@@ -20,20 +20,34 @@
 
           <img src="https://www.concordusa.com/sites/all/themes/oneconcord/images/Concord-Horizontal-Logo.svg" alt="">
           <ul>
+            <li ng-click = "getData()"><a href="#">Exercise 1-1</a>
+
+            </li>
+            <li><a href="#">Exercise 1-2</a>
+
+            </li>
+            <li ng-click = "toggleDropdown(this)" ><a href="#">Exercise 1-3</a>
+              <ul ng-class = "{collapse:classes.collapse==true}">
+                <li><a href="#step1">Prerequisite Software</a></li>
+                <li><a href="#step1">Create Integration Tests with SOAPUI</a></li>
+                <li><a href="#step1">Deploying the Application in Tomcat</a></li>
+                <li><a href="#step1">Create Webpages</a></li>
+              </ul>
+            </li>
+
+          </ul>
+          <!-- <ul>
             <li><a href="#step1">Prerequisite Software</a></li>
             <li><a href="#step1">Create Integration Tests with SOAPUI</a></li>
             <li><a href="#step1">Deploying the Application in Tomcat</a></li>
             <li><a href="#step1">Create Webpages</a></li>
-            <li><a href="#step1">Create Build Scripts</a></li>
+            <li ng-click = "toggleDropdown(this)"><a  href="#step1">Create Build Scripts</a>
 
+              <ul ng-class = "{collapse:classes.collapse==true}">
 
-                <!-- <li><a href="#step1">Create Integration Tests with SOAPUI</a></li>
-                <li><a href="#step2">Debugging the Services in Tomcat</a></li>
-                <li><a href="#step3">step 3</a></li>
-                <li><a href="#step4">step 4</a></li>
-                <li><a href="#step5">step 5</a></li> -->
-          </ul>
-
+              </ul>
+              </li>
+            </ul> -->
           </div>
         </div>
         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">

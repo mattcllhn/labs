@@ -39,6 +39,8 @@ html body{
   min-height: 1000px;
   height:100vh;
   color:white;
+  animation: all linear 5000ms;
+
 }
 #sideBar ul {
   list-style: none;
