@@ -8,7 +8,11 @@
       "Create Integration Tests with SOAPUI":[
         {"label":"1.	Start SOAPUI",
           "image":""
+        },
+        {"label":"2.	Start SOAPUI",
+          "image":""
         }
+
       ],
       "Deploying the Application in Tomcat":{},
       "Create Webpages":{},
