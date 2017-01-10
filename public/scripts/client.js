@@ -18,7 +18,7 @@ $scope.words = {
 .directive('myWords', function(){
   return{
     restrict: 'E',
-    templateUrl:'./views/partials/words.html',
+    templateUrl:'./views/directives/words.html',
     replace : true
 
   };
