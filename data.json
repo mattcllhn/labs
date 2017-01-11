@@ -10,6 +10,7 @@
       "chapters": [
 
         {
+          "id":1,
           "title":"Getting the code",
           "content":[
             {"step":"Start a browser and go to https://bitbucket.org/"},
@@ -28,14 +29,17 @@
           ]
         },
         {
+          "id":2,
           "title":"Add Tomcat server to Eclipse",
           "content":[]
         },
         {
+          "id":3,
           "title":"Import Sample Eclipse Project",
           "content":[]
         },
         {
+          "id":4,
           "title":"Create Eclipse Project",
           "content":[]
         }
