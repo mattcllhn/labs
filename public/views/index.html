@@ -11,7 +11,7 @@
 </head>
 <body ng-app = "myApp">
   <div class="page-wrapper">
-    <div ng-controller = "mockController" id="controllerDiv">
+    <div ng-controller = "appController" id="controllerDiv">
       <!-- <my-words></my-words> -->
       <div class="row" id="sideBarRow">
         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="sideBar">
@@ -44,9 +44,9 @@
               <div class="header-nav dark">
 
               <ul>
-                <li><a href="#">Exercise 1</a></li>
-                <li><a href="#">Exercise 2</a></li>
-                <li><a href="#">Exercise 3</a></li>
+                <li ng-click = "getData('ex1')"><a href="#">Exercise 1</a></li>
+                <li ng-click = "getData('ex2')"><a href="#">Exercise 2</a></li>
+                <li ng-click = "getData('ex3')"><a href="#">Exercise 3</a></li>
 
               </ul>
             </div>

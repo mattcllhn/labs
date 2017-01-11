@@ -1,6 +1,6 @@
 console.log('js');
 var myApp = angular.module('myApp',[]);
-myApp.controller('mockController', ['$scope','$http',function($scope,$http){
+myApp.controller('appController', ['$scope','$http',function($scope,$http){
   console.log('NG');
 $scope.words = {
   hello:'hello',
@@ -16,10 +16,12 @@ $scope.classes = {
   };//toggleDropdown
 
 
-  $scope.getData = function(){
+  $scope.getData = function(data){
+    var params = {param:data};
     $http({
       method:'GET',
-      url:'/jsonData'
+      url:'/jsonData',
+      params:params
     }).then(function(data){
       console.log(data);
       $scope.lesson = data.data.ex1;
@@ -28,29 +30,6 @@ $scope.classes = {
   };
 
 
-  $scope.fsTest = function(){
-    var objToSend = {
-    id:1,
-    otherThing:'is a string',
-    lastThing:true
-    };
-    $http({
-      method:'POST',
-      url:'/test',
-      data:objToSend
-    }).then(function(data){
-      console.log(data);
-    });
-  };
 
 $scope.getData();
-}])//mockController
-.directive('myWords', function(){
-  return{
-    restrict: 'E',
-    templateUrl:'./views/directives/words.html',
-    replace : true
-
-  };
-
-});//mywords
+}]);//appController
