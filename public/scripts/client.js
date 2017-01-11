@@ -24,7 +24,7 @@ $scope.classes = {
       params:params
     }).then(function(data){
       console.log(data);
-      $scope.lesson = data.data.ex1;
+      $scope.lesson = data.data;
       console.log($scope.lesson);
     });
   };

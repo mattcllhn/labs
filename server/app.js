@@ -20,12 +20,35 @@ app.get('/',function(req, res){
 });
 
 app.get('/jsonData',function(req, res){
-  console.log('here are the req.query',req.query);
+  console.log('here is the req.query\n\n\n\n\n',req.query);
   // console.log(jsonData);
   // console.log(typeof(jsonData));
   // jsonData.ex4 = {test:"test"};
   // fs.writeFile('data.json',JSON.stringify(jsonData,null,4));
-    res.send(jsonData);
+  switch (req.query.param) {
+    case undefined:
+    console.log(jsonData.ex1);
+        res.send(jsonData.ex1);
+    break;
+    case 'ex1':
+    console.log(jsonData.ex1);
+    res.send(jsonData.ex1);
+
+    break;
+    case 'ex2':
+    console.log(jsonData.ex2);
+    res.send(jsonData.ex2);
+
+      break;
+      case 'ex3':
+      console.log(jsonData.ex3);
+      res.send(jsonData.ex3);
+
+        break;
+    default:
+    console.log('critical switch malfunction');
+  }
+
 
     // res.sendStatus(200);
   });
