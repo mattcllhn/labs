@@ -1,13 +1,16 @@
 {
   "ex1": {
       "title": "Health Enrollment Lab Exercise Part 1",
+      "intro":{
+                "title":"Prerequisite Software",
+                "list":["JDK 1.8","Eclipse 4.6 or newer","MySQL 5.7 or newer","Tomcat 8.5","SourceTree 1.9"],
+                "paragraph":"Before you begin the lab, you will need to get the code. We will use SourceTree to download the sample project and required libraries."
+
+              },
       "chapters": [
-        {"title":"Prerequisite Software",
-          "list":["JDK 1.8","Eclipse 4.6 or newer","MySQL 5.7 or newer","Tomcat 8.5","SourceTree 1.9"]
-        },
+
         {
           "title":"Getting the code",
-          "paragraph":"Before you begin the lab, you will need to get the code. We will use SourceTree to download the sample project and required libraries.",
           "content":[
             {"step":"Start a browser and go to https://bitbucket.org/"},
             {"step":"Login with your credentials",

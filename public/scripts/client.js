@@ -43,7 +43,7 @@ $scope.classes = {
     });
   };
 
-
+$scope.getData();
 }])//mockController
 .directive('myWords', function(){
   return{
