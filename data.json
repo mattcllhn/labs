@@ -110,33 +110,64 @@
   },
   "ex3": {
     "title": "Health Enrollment Lab Exercise Part 3",
-    "chapters": {
-      "prerequisites": {
-        "prereqs": [
-          "JDK 1.8",
-          "Eclipse 4.6 or newer",
-          "MySQL 5.7 or newer",
-          "Tomcat 8.5",
-          "SourceTree 1.9",
-          "Chrome browser"
-        ],
-        "paragraph": "Before you begin part 3 of the lab, you must complete parts 1 and 2. You won’t be able to do these exercises without having a functional RestService running on Tomcat. In part 3 you will create an integration test plan using SOAPUI, debug services in Tomcat, handle errors, create a war file, build the webpages and make a build script.",
-        "content": [
-          {
-            "label": "",
-            "img": ""
+    "intro":{
+      "title":"Prerequisite Software",
+      "list":["JDK 1.8","Eclipse 4.6 or newer","MySQL 5.7 or newer","Tomcat 8.5","SourceTree 1.9"],
+      "paragraph":"Before you begin part 3 of the lab, you must complete parts 1 and 2. You won’t be able to do these exercises without having a functional RestService running on Tomcat. In part 3 you will create an integration test plan using SOAPUI, debug services in Tomcat, handle errors, create a war file, build the webpages and make a build script."
+
+    },
+    "chapters": [
+
+      {
+        "id":1,
+        "title":"Create Integration Tests with SOAPUI",
+        "content":[
+          {"step":"Start a browser and go to https://bitbucket.org/"},
+          {"step":"Login with your credentials",
+            "img":""
           },
-          {},
-          {},
-          {}
+          {"step":""},
+          {"step":""},
+          {"step":""},
+          {"step":""},
+          {"step":""},
+          {"step":""},
+          {"step":""},
+          {"step":""}
+
         ]
       },
-      "Deploying the Application in Tomcat": {},
-      "Create Webpages": {},
-      "Create Build Scripts": {}
-    }
-  },
-  "ex4": {
-    "test": "test"
+      {
+        "id":2,
+        "title":"Debugging the Services in Tomcat",
+        "content":[]
+      },
+      {
+        "id":3,
+        "title":"Error Handling",
+        "content":[]
+      },
+      {
+        "id":4,
+        "title":"Create a War file",
+        "content":[]
+      },
+      {
+        "id":5,
+        "title":"Testing Data Access",
+        "content":[]
+      },
+      {
+        "id":6,
+        "title":"Deploying the Application in Tomcat",
+        "content":[]
+      },
+      {
+        "id":7,
+        "title":"Create Webpages",
+        "content":[]
+      }
+    ]
   }
+
 }

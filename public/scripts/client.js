@@ -23,9 +23,9 @@ $scope.classes = {
       url:'/jsonData',
       params:params
     }).then(function(data){
-      console.log(data);
+      // console.log(data);
       $scope.lesson = data.data;
-      console.log($scope.lesson);
+      // console.log($scope.lesson);
     });
   };
 
