@@ -1,15 +1,100 @@
 {
-"ex1-3":{
-  "title":"Health Enrollment Lab Exercise Part 3",
-  "chapters":{
-      "intro":{
-        "Prerequisites":["JDK 1.8","Eclipse 4.6 or newer","MySQL 5.7 or newer","Tomcat 8.5","SourceTree 1.9","Chrome browser"],
-        "paragraph":"Before you begin part 3 of the lab, you must complete parts 1 and 2. You won’t be able to do these exercises without having a functional RestService running on Tomcat. In part 3 you will create an integration test plan using SOAPUI, debug services in Tomcat, handle errors, create a war file, build the webpages and make a build script.",
-        "content":[{},{},{},{}]
-      },
-      "Deploying the Application in Tomcat":{},
-      "Create Webpages":{},
-      "Create Build Scripts":{}
-}
-}
+  "ex1": {
+      "title": "Health Enrollment Lab Exercise Part 1",
+      "chapters": [
+        {"title":"Prerequisite Software",
+          "list":["JDK 1.8","Eclipse 4.6 or newer","MySQL 5.7 or newer","Tomcat 8.5","SourceTree 1.9"]
+        },
+        {
+          "title":"Getting the code",
+          "paragraph":"Before you begin the lab, you will need to get the code. We will use SourceTree to download the sample project and required libraries.",
+          "content":[
+            {"step":"Start a browser and go to https://bitbucket.org/"},
+            {"step":"Login with your credentials",
+              "img":""
+            },
+            {"step":""},
+            {"step":""},
+            {"step":""},
+            {"step":""},
+            {"step":""},
+            {"step":""},
+            {"step":""},
+            {"step":""}
+
+          ]
+        },
+        {
+          "title":"Add Tomcat server to Eclipse",
+          "content":[]
+        },
+        {
+          "title":"Import Sample Eclipse Project",
+          "content":[]
+        },
+        {
+          "title":"Create Eclipse Project",
+          "content":[]
+        }
+      ]
+  },
+  "ex2": {
+      "title": "Health Enrollment Lab Exercise Part 2",
+      "chapters": {
+          "prerequisites": {
+              "prereqs": [
+                  "JDK 1.8",
+                  "Eclipse 4.6 or newer",
+                  "MySQL 5.7 or newer",
+                  "Tomcat 8.5",
+                  "SourceTree 1.9",
+                  "Chrome browser"
+              ],
+              "paragraph": "Before you begin part 3 of the lab, you must complete parts 1 and 2. You won’t be able to do these exercises without having a functional RestService running on Tomcat. In part 3 you will create an integration test plan using SOAPUI, debug services in Tomcat, handle errors, create a war file, build the webpages and make a build script.",
+              "content": [
+                  {
+                      "label": "",
+                      "img": ""
+                  },
+                  {},
+                  {},
+                  {}
+              ]
+          },
+          "Deploying the Application in Tomcat": {},
+          "Create Webpages": {},
+          "Create Build Scripts": {}
+      }
+  },
+    "ex3": {
+        "title": "Health Enrollment Lab Exercise Part 3",
+        "chapters": {
+            "prerequisites": {
+                "prereqs": [
+                    "JDK 1.8",
+                    "Eclipse 4.6 or newer",
+                    "MySQL 5.7 or newer",
+                    "Tomcat 8.5",
+                    "SourceTree 1.9",
+                    "Chrome browser"
+                ],
+                "paragraph": "Before you begin part 3 of the lab, you must complete parts 1 and 2. You won’t be able to do these exercises without having a functional RestService running on Tomcat. In part 3 you will create an integration test plan using SOAPUI, debug services in Tomcat, handle errors, create a war file, build the webpages and make a build script.",
+                "content": [
+                    {
+                        "label": "",
+                        "img": ""
+                    },
+                    {},
+                    {},
+                    {}
+                ]
+            },
+            "Deploying the Application in Tomcat": {},
+            "Create Webpages": {},
+            "Create Build Scripts": {}
+        }
+    },
+    "ex4": {
+        "test": "test"
+    }
 }

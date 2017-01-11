@@ -21,7 +21,11 @@ app.get('/',function(req, res){
 
 app.get('/jsonData',function(req, res){
   console.log(jsonData);
+  // console.log(typeof(jsonData));
+  // jsonData.ex4 = {test:"test"};
+  // fs.writeFile('data.json',JSON.stringify(jsonData,null,4));
     res.send(jsonData);
+
     // res.sendStatus(200);
   });
 

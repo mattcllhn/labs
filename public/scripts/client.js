@@ -22,10 +22,12 @@ $scope.classes = {
       url:'/jsonData'
     }).then(function(data){
       console.log(data);
+      $scope.lesson = data.data.ex1;
+      console.log($scope.lesson);
     });
   };
 
-  
+
   $scope.fsTest = function(){
     var objToSend = {
     id:1,
