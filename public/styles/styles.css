@@ -31,6 +31,12 @@ html body{
   padding:1px;
   color:white;
 }
+.header-nav ul li a{
+  color:white;
+}
+.dark{
+  background-color: #464442;
+}
 #sideBarRow{
   height:100%;
 }
@@ -39,6 +45,8 @@ html body{
   min-height: 1000px;
   height:100vh;
   color:white;
+  animation: all linear 5000ms;
+
 }
 #sideBar ul {
   list-style: none;

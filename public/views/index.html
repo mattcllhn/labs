@@ -11,7 +11,7 @@
 </head>
 <body ng-app = "myApp">
   <div class="page-wrapper">
-    <div ng-controller = "mockController" id="controllerDiv">
+    <div ng-controller = "appController" id="controllerDiv">
       <!-- <my-words></my-words> -->
       <div class="row" id="sideBarRow">
         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="sideBar">
@@ -19,36 +19,35 @@
 
 
           <img src="https://www.concordusa.com/sites/all/themes/oneconcord/images/Concord-Horizontal-Logo.svg" alt="">
-          <ul>
-            <li><a href="#step1">Setup</a></li>
-            <li><a href="#step1">Deploying the Application in Tomcat</a></li>
-            <li><a href="#step1">Create Webpages</a></li>
-            <li><a href="#step1">Create Build Scripts</a></li>
-
-
-                <!-- <li><a href="#step1">Create Integration Tests with SOAPUI</a></li>
-                <li><a href="#step2">Debugging the Services in Tomcat</a></li>
-                <li><a href="#step3">step 3</a></li>
-                <li><a href="#step4">step 4</a></li>
-                <li><a href="#step5">step 5</a></li> -->
+          <ul >
+            <li ng-click = "getData()" ng-repeat = "key in lesson.chapters"><a href="#">{{key.title}}</a></li>
           </ul>
 
           </div>
         </div>
         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
           <div class="row">
+            <div class="header-nav">
+
+            <ul>
+              <li>Java</li>
+              <li>C#</li>
+              <li>.Net</li>
+            </ul>
+          </div>
             <div class = "header">
 
-              <h1>Health Enrollment Lab Exercise Part 3</h1>
+              <h1>{{lesson.title}}</h1>
               <!-- <button ng-init = "clicked=false" type="button"ng-click = "clicked =!clicked" ng-class = "{'green':clicked,'button':!clicked}" name="button">test buton</button> -->
 
               </div>
-              <div class="header-nav">
+              <div class="header-nav dark">
 
               <ul>
-                <li>Java</li>
-                <li>C#</li>
-                <li>.Net</li>
+                <li ng-click = "getData('ex1')"><a href="#">Exercise 1</a></li>
+                <li ng-click = "getData('ex2')"><a href="#">Exercise 2</a></li>
+                <li ng-click = "getData('ex3')"><a href="#">Exercise 3</a></li>
+
               </ul>
             </div>
 
@@ -57,22 +56,21 @@
 
           <div class="row">
             <div class="contentBody">
-              <h2>Create Integration Tests with SOAPUI</h2>
-              <h4>Prerequisite Software</h4>
+              <h4>{{lesson.intro.title}}</h4>
               <ul>
-                <li>JDK 1.8</li>
-                <li>Eclipse 4.6 or newer</li>
-                <li>MySQL 5.7 or newer</li>
-                <li>Tomcat 8.5</li>
-                <li>SourceTree 1.9</li>
-                <li>Chrome browser</li>
+                <li ng-repeat = "key in lesson.intro.list">{{key}}</li>
               </ul>
-              <p>Before you begin part 3 of the lab, you must complete parts 1 and 2. You won’t be able to do these exercises without having a functional RestService running on Tomcat. In part 3 you will create an integration test plan using SOAPUI, debug services in Tomcat, handle errors, create a war file, build the webpages and make a build script.</p>
+              <p>{{lesson.intro.paragraph}}</p>
             </div>
           </div>
 
           <div class="row">
             <div class="contentBody">
+              <div ng-repeat = "key in lesson.chapters">
+
+              <h4>{{key.title}}</h4>
+              <!-- <h2>Create Integration Tests with SOAPUI</h2>
+
               <h3 id = "step1">1. Start SOAPUI</h3>
               <div class="img-wrapper">
               <img src="../images/1.png" alt="">
@@ -97,13 +95,14 @@
               <h3 id = "step5">5.	SOAPUI will generate a GET request</h3>
               <div class="img-wrapper">
 
-              <img src="../images/step5.png" alt="">
+              <img src="../images/step5.png" alt=""> -->
+            </div>
+
             </div>
             </div>
           </div>
       </div>
     </div>
   </div>
-</div>
 </body>
 </html>
