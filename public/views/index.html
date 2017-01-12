@@ -70,8 +70,9 @@
 
               <h4>{{key.title}}</h4>
               <ol>
-                <li ng-repeat = "x in key">{{x.step}}
-                  <img ng-source = "{{x.img}}" alt="">
+                <li ng-repeat = "x in key.content">
+                  <p>{{x.step}}</p>
+                  <img ng-src = "{{x.img}}" alt="">
                 </li>
               </ol>
             </div>

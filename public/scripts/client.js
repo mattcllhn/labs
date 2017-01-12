@@ -25,7 +25,7 @@ $scope.words = {
     }).then(function(data){
       // console.log(data);
       $scope.lesson = data.data;
-      // console.log($scope.lesson);
+      console.log($scope.lesson);
     });
   };
 
