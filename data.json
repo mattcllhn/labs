@@ -62,19 +62,21 @@
         "id":1,
         "title":"Create an Object Model",
         "content":[
-          {"step":"Start a browser and go to https://bitbucket.org/"},
-          {"step":"Login with your credentials",
-            "img":""
+          {"step":"Start SOAPUI",
+            "img":"./images/1.png"
           },
-          {"step":""},
-          {"step":""},
-          {"step":""},
-          {"step":""},
-          {"step":""},
-          {"step":""},
-          {"step":""},
-          {"step":""}
-
+          {"step":"Select Projects, right click and select New Rest Project",
+            "img":"./images/step2.png"
+          },
+          {"step":"For the URI use http://localhost:8080/RestService/",
+            "img":"./images/step3.png"
+          },
+          {"step":"Click OK",
+            "img":"./images/step4.png"
+          },
+          {"step":"SOAPUI will generate a GET request",
+            "img":"./images/step5.png"
+          }
         ]
       },
       {
@@ -113,7 +115,7 @@
     "title": "Health Enrollment Lab Exercise Part 3",
     "intro":{
       "title":"Prerequisite Software",
-      "list":["JDK 1.8","Eclipse 4.6 or newer","MySQL 5.7 or newer","Tomcat 8.5","SourceTree 1.9"],
+      "list":["JDK 1.8","Eclipse 4.6 or newer","MySQL 5.7 or newer","Tomcat 8.5","SourceTree 1.9","Chrome browser"],
       "paragraph":"Before you begin part 3 of the lab, you must complete parts 1 and 2. You won’t be able to do these exercises without having a functional RestService running on Tomcat. In part 3 you will create an integration test plan using SOAPUI, debug services in Tomcat, handle errors, create a war file, build the webpages and make a build script."
 
     },

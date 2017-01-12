@@ -69,33 +69,11 @@
               <div ng-repeat = "key in lesson.chapters">
 
               <h4>{{key.title}}</h4>
-              <!-- <h2>Create Integration Tests with SOAPUI</h2>
-
-              <h3 id = "step1">1. Start SOAPUI</h3>
-              <div class="img-wrapper">
-              <img src="../images/1.png" alt="">
-            </div>
-
-              <h3 id = "step2">2.Select Projects, right click and select New Rest Project</h3>
-              <div class="img-wrapper">
-                <img src="../images/step2.png" alt="">
-              </div>
-              <h3 id = "step3">3.	For the URI use http://localhost:8080/RestService/</h3>
-              <div class="img-wrapper">
-
-              <img src="../images/step3.png" alt="">
-            </div>
-
-              <h3 id = "step4">4.	Click OK</h3>
-              <div class="img-wrapper">
-
-              <img src="../images/step4.png" alt="">
-            </div>
-
-              <h3 id = "step5">5.	SOAPUI will generate a GET request</h3>
-              <div class="img-wrapper">
-
-              <img src="../images/step5.png" alt=""> -->
+              <ol>
+                <li ng-repeat = "x in key">{{x.step}}
+                  <img ng-source = "{{x.img}}" alt="">
+                </li>
+              </ol>
             </div>
 
             </div>

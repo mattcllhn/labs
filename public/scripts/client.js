@@ -6,14 +6,14 @@ $scope.words = {
   hello:'hello',
   world:'earth'
 };
-$scope.classes = {
-  collapse:true
-};
-  $scope.toggleDropdown = function(el){
-    console.log('click works',el);
-    el.classes.collapse = !el.classes.collapse;
-
-  };//toggleDropdown
+// $scope.classes = {
+//   collapse:true
+// };
+  // $scope.toggleDropdown = function(el){
+  //   console.log('click works',el);
+  //   el.classes.collapse = !el.classes.collapse;
+  //
+  // };//toggleDropdown
 
 
   $scope.getData = function(data){
