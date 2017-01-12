@@ -18,10 +18,10 @@
           <div class="content-fix">
 
 
-          <img src="https://www.concordusa.com/sites/all/themes/oneconcord/images/Concord-Horizontal-Logo.svg" alt="">
-          <ul >
-            <li ng-repeat = "key in lesson.chapters"><a href="#chapter{{key.id}}">{{key.title}}</a></li>
-          </ul>
+            <img src="https://www.concordusa.com/sites/all/themes/oneconcord/images/Concord-Horizontal-Logo.svg" alt="">
+            <ul >
+              <li ng-repeat = "key in lesson.chapters"><a href="#chapter{{key.id}}">{{key.title}}</a></li>
+            </ul>
 
           </div>
         </div>
@@ -29,19 +29,18 @@
           <div class="row">
             <div class="header-nav">
 
-            <ul>
-              <li>Java</li>
-              <li>C#</li>
-              <li>.Net</li>
-            </ul>
-          </div>
+              <ul>
+                <li>Java</li>
+                <li>C#</li>
+                <li>.Net</li>
+              </ul>
+            </div>
             <div class = "header">
 
               <h1>{{lesson.title}}</h1>
-              <!-- <button ng-init = "clicked=false" type="button"ng-click = "clicked =!clicked" ng-class = "{'green':clicked,'button':!clicked}" name="button">test buton</button> -->
 
-              </div>
-              <div class="header-nav dark">
+            </div>
+            <div class="header-nav dark">
 
               <ul>
                 <li ng-click = "getData('ex1')"><a href="#">Exercise 1</a></li>
@@ -51,7 +50,7 @@
               </ul>
             </div>
 
-            </div>
+          </div>
 
 
           <div class="row">
@@ -68,21 +67,21 @@
             <div class="contentBody">
               <div ng-repeat = "key in lesson.chapters">
 
-              <h4 id = "chapter{{key.id}}">{{key.title}}</h4>
-              <ol>
-                <li ng-repeat = "x in key.content">
-                  <p>{{x.step}}</p>
-                  <div class="img-wrapper">
-                  <img ng-src = "{{x.img}}" alt="">
-                </div>
+                <h4 id = "chapter{{key.id}}">{{key.title}}</h4>
+                <ol>
+                  <li ng-repeat = "x in key.content">
+                    <p>{{x.step}}</p>
+                    <div class="img-wrapper">
+                      <img ng-src = "{{x.img}}" alt="">
+                    </div>
 
-                </li>
-              </ol>
-            </div>
+                  </li>
+                </ol>
+              </div>
 
-            </div>
             </div>
           </div>
+        </div>
       </div>
     </div>
   </div>

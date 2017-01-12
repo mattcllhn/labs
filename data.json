@@ -62,19 +62,19 @@
         "id":1,
         "title":"Create an Object Model",
         "content":[
-          {"step":"Start SOAPUI",
+          {"step":"Select src and right click",
             "img":"./images/1.png"
           },
-          {"step":"Select Projects, right click and select New Rest Project",
+          {"step":"Select New -> Package",
             "img":"./images/step2.png"
           },
-          {"step":"For the URI use http://localhost:8080/RestService/",
+          {"step":"Enter com.concord.hie.model and click Finish",
             "img":"./images/step3.png"
           },
-          {"step":"Click OK",
+          {"step":"Repeat the process to create the following packages: com.concord.hie.service, com.concord.hie.dao, com.concord.hie.dao.impl",
             "img":"./images/step4.png"
           },
-          {"step":"SOAPUI will generate a GET request",
+          {"step":"You should have the following packages under src folder",
             "img":"./images/step5.png"
           }
         ]
@@ -125,19 +125,21 @@
         "id":1,
         "title":"Create Integration Tests with SOAPUI",
         "content":[
-          {"step":"Start a browser and go to https://bitbucket.org/"},
-          {"step":"Login with your credentials",
-            "img":""
+          {"step":"Start SOAPUI",
+            "img":"./images/1.png"
           },
-          {"step":""},
-          {"step":""},
-          {"step":""},
-          {"step":""},
-          {"step":""},
-          {"step":""},
-          {"step":""},
-          {"step":""}
-
+          {"step":"Select Projects, right click and select New Rest Project",
+            "img":"./images/step2.png"
+          },
+          {"step":"For the URI use http://localhost:8080/RestService/",
+            "img":"./images/step3.png"
+          },
+          {"step":"Click OK",
+            "img":"./images/step4.png"
+          },
+          {"step":"SOAPUI will generate a GET request",
+            "img":"./images/step5.png"
+          }
         ]
       },
       {
