@@ -1,11 +1,11 @@
 console.log('js');
-var myApp = angular.module('myApp',[]);
+var myApp = angular.module('myApp',['xeditable']);
 myApp.controller('appController', ['$scope','$http',function($scope,$http){
   console.log('NG');
-$scope.words = {
-  hello:'hello',
-  world:'earth'
-};
+// $scope.words = {
+//   hello:'hello',
+//   world:'earth'
+// };
 // $scope.classes = {
 //   collapse:true
 // };
@@ -25,7 +25,7 @@ $scope.words = {
     }).then(function(data){
       // console.log(data);
       $scope.lesson = data.data;
-      console.log($scope.lesson);
+      // console.log($scope.lesson);
     });
   };
 
