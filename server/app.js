@@ -20,9 +20,23 @@ app.listen(3000,function(){
 app.get('/',function(req, res){
   res.sendFile(path.resolve('public/views/index.html'));
 });
+
 app.put('/jsonUpdate',function(req,res){
-  console.log('hello fron jsonUpdate\n'+req.body);
-  jsonData.ex1 = req.body;
+  // console.log('hello fron jsonUpdate lesson\n'+req.body.lesson);
+  // console.log('hello fron jsonUpdate currentEx\n'+req.body.ex);
+  switch (req.body.ex) {
+    case 'ex1':
+    jsonData.ex1 = req.body.lesson;
+    break;
+    case 'ex2':
+    jsonData.ex2 = req.body.lesson;
+    break;
+    case 'ex3':
+    jsonData.ex3 = req.body.lesson;
+    break;
+    default:
+  }
+  // jsonData.ex1 = req.body;
   fs.writeFile('data.json',JSON.stringify(jsonData,null,4));
 
   res.sendStatus(200);

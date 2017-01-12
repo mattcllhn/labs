@@ -7,14 +7,14 @@ myApp.controller('appController', ['$scope','$http',function($scope,$http){
 
   $scope.update = function(){
     console.log('the thing has been changed :\n', $scope.lesson);
-// var objToSend = {
-//     lesson:$scope.lesson,
-//
-// };
+  var objToSend = {
+      lesson:$scope.lesson,
+      ex:$scope.currentEx
+  };
     $http({
       method:'PUT',
       url:'/jsonUpdate',
-      data:$scope.lesson
+      data:objToSend
     }).then(function(data){
       console.log('success',data);
     });
@@ -22,6 +22,8 @@ myApp.controller('appController', ['$scope','$http',function($scope,$http){
 
 
   $scope.getData = function(data){
+    $scope.currentEx = data || 'ex1';
+    console.log($scope.currentEx);
     var params = {param:data};
     $http({
       method:'GET',
