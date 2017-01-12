@@ -20,7 +20,7 @@
 
           <img src="https://www.concordusa.com/sites/all/themes/oneconcord/images/Concord-Horizontal-Logo.svg" alt="">
           <ul >
-            <li ng-click = "getData()" ng-repeat = "key in lesson.chapters"><a href="#">{{key.title}}</a></li>
+            <li ng-repeat = "key in lesson.chapters"><a href="#chapter{{key.id}}">{{key.title}}</a></li>
           </ul>
 
           </div>
@@ -56,7 +56,7 @@
 
           <div class="row">
             <div class="contentBody">
-              <h4>{{lesson.intro.title}}</h4>
+              <h4 >{{lesson.intro.title}}</h4>
               <ul>
                 <li ng-repeat = "key in lesson.intro.list">{{key}}</li>
               </ul>
@@ -68,11 +68,14 @@
             <div class="contentBody">
               <div ng-repeat = "key in lesson.chapters">
 
-              <h4>{{key.title}}</h4>
+              <h4 id = "chapter{{key.id}}">{{key.title}}</h4>
               <ol>
                 <li ng-repeat = "x in key.content">
                   <p>{{x.step}}</p>
+                  <div class="img-wrapper">
                   <img ng-src = "{{x.img}}" alt="">
+                </div>
+
                 </li>
               </ol>
             </div>
