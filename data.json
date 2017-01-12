@@ -1,178 +1,215 @@
-
 {
-  "ex1": {
-    "title": "Health Enrollment Lab Exercise Part 1",
-    "intro":{
-      "title":"Prerequisite Software",
-      "list":["JDK 1.8","Eclipse 4.6 or newer","MySQL 5.7 or newer","Tomcat 8.5","SourceTree 1.9"],
-      "paragraph":"Before you begin the lab, you will need to get the code. We will use SourceTree to download the sample project and required libraries."
-
-    },
-    "chapters": [
-
-      {
-        "id":1,
-        "title":"Getting the code",
-        "content":[
-          {"step":"Start a browser and go to https://bitbucket.org/"},
-          {"step":"Login with your credentials",
-            "img":""
-          },
-          {"step":""},
-          {"step":""},
-          {"step":""},
-          {"step":""},
-          {"step":""},
-          {"step":""},
-          {"step":""},
-          {"step":""}
-
+    "ex1": {
+        "title": "Health Enrollment Lab Exercise Part 1",
+        "intro": {
+            "title": "Prerequisite Software",
+            "list": [
+                "JDK 1.8",
+                "Eclipse 4.6 or newer",
+                "MySQL 5.7 or newer",
+                "Tomcat 8.5",
+                "SourceTree 1.9"
+            ],
+            "paragraph": "Before you begin the lab, you will need to get the code. We will use SourceTree to download the sample project and required libraries."
+        },
+        "chapters": [
+            {
+                "id": 1,
+                "title": "Getting the code",
+                "content": [
+                    {
+                        "step": "Start a browser and go to https://bitbucket.org/"
+                    },
+                    {
+                        "step": "Login with your credentials",
+                        "img": ""
+                    },
+                    {
+                        "step": ""
+                    },
+                    {
+                        "step": ""
+                    },
+                    {
+                        "step": ""
+                    },
+                    {
+                        "step": ""
+                    },
+                    {
+                        "step": ""
+                    },
+                    {
+                        "step": ""
+                    },
+                    {
+                        "step": ""
+                    },
+                    {
+                        "step": ""
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Add Tomcat server to Eclipse",
+                "content": []
+            },
+            {
+                "id": 3,
+                "title": "Import Sample Eclipse Project",
+                "content": []
+            },
+            {
+                "id": 4,
+                "title": "Create Eclipse Project",
+                "content": []
+            }
         ]
-      },
-      {
-        "id":2,
-        "title":"Add Tomcat server to Eclipse",
-        "content":[]
-      },
-      {
-        "id":3,
-        "title":"Import Sample Eclipse Project",
-        "content":[]
-      },
-      {
-        "id":4,
-        "title":"Create Eclipse Project",
-        "content":[]
-      }
-    ]
-  },
-
-  "ex2": {
-    "title": "Health Enrollment Lab Exercise Part 2",
-    "intro":{
-      "title":"Prerequisite Software",
-      "list":["JDK 1.8","Eclipse 4.6 or newer","MySQL 5.7 or newer","Tomcat 8.5","SourceTree 1.9"],
-      "paragraph":"Before you begin part 2 of the lab, your Eclipse environment must have a static web project for HTML/Javascript and a dynamic web project for REST services. The step-by-step instructions are in Health Enrollment Lab Exercise 1 Setup. In part 2 of the lab, you will create the java classes, database tables, data access components, REST services and deploy the application on Tomcat. Step-by-step instructions will demonstrate how to write each component. You will follow the pattern to write the remaining classes."
-
     },
-
-    "chapters": [
-
-      {
-        "id":1,
-        "title":"Create an Object Model",
-        "content":[
-          {"step":"Select src and right click",
-            "img":"./images/1.png"
-          },
-          {"step":"Select New -> Package",
-            "img":"./images/step2.png"
-          },
-          {"step":"Enter com.concord.hie.model and click Finish",
-            "img":"./images/step3.png"
-          },
-          {"step":"Repeat the process to create the following packages: com.concord.hie.service, com.concord.hie.dao, com.concord.hie.dao.impl",
-            "img":"./images/step4.png"
-          },
-          {"step":"You should have the following packages under src folder",
-            "img":"./images/step5.png"
-          }
+    "ex2": {
+        "title": "Health Enrollment Lab Exercise Part 2",
+        "intro": {
+            "title": "Prerequisite Software",
+            "list": [
+                "JDK 1.8",
+                "Eclipse 4.6 or newer",
+                "MySQL 5.7 or newer",
+                "Tomcat 8.5",
+                "SourceTree 1.9"
+            ],
+            "paragraph": "Before you begin part 2 of the lab, your Eclipse environment must have a static web project for HTML/Javascript and a dynamic web project for REST services. The step-by-step instructions are in Health Enrollment Lab Exercise 1 Setup. In part 2 of the lab, you will create the java classes, database tables, data access components, REST services and deploy the application on Tomcat. Step-by-step instructions will demonstrate how to write each component. You will follow the pattern to write the remaining classes."
+        },
+        "chapters": [
+            {
+                "id": 1,
+                "title": "Create an Object Model",
+                "content": [
+                    {
+                        "step": "Select src and right click",
+                        "img": "./images/1.png"
+                    },
+                    {
+                        "step": "Select New -> Package",
+                        "img": "./images/step2.png"
+                    },
+                    {
+                        "step": "Enter com.concord.hie.model and click Finish",
+                        "img": "./images/step3.png"
+                    },
+                    {
+                        "step": "Repeat the process to create the following packages: com.concord.hie.service, com.concord.hie.dao, com.concord.hie.dao.impl",
+                        "img": "./images/step4.png"
+                    },
+                    {
+                        "step": "You should have the following packages under src folder",
+                        "img": "./images/step5.png"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Create Database Tables",
+                "content": []
+            },
+            {
+                "id": 3,
+                "title": "Create Data Access Component",
+                "content": []
+            },
+            {
+                "id": 4,
+                "title": "Create DAO for PlanSponsor",
+                "content": []
+            },
+            {
+                "id": 5,
+                "title": "Testing Data Access",
+                "content": []
+            },
+            {
+                "id": 6,
+                "title": "Handling SQLExceptions Errors and Logging",
+                "content": []
+            },
+            {
+                "id": 7,
+                "title": "Creating REST Services",
+                "content": []
+            }
         ]
-      },
-      {
-        "id":2,
-        "title":"Create Database Tables",
-        "content":[]
-      },
-      {
-        "id":3,
-        "title":"Create Data Access Component",
-        "content":[]
-      },
-      {
-        "id":4,
-        "title":"Create DAO for PlanSponsor",
-        "content":[]
-      },
-      {
-        "id":5,
-        "title":"Testing Data Access",
-        "content":[]
-      },
-      {
-        "id":6,
-        "title":"Handling SQLExceptions Errors and Logging",
-        "content":[]
-      },
-      {
-        "id":7,
-        "title":"Creating REST Services",
-        "content":[]
-      }
-    ]
-  },
-  "ex3": {
-    "title": "Health Enrollment Lab Exercise Part 3",
-    "intro":{
-      "title":"Prerequisite Software",
-      "list":["JDK 1.8","Eclipse 4.6 or newer","MySQL 5.7 or newer","Tomcat 8.5","SourceTree 1.9","Chrome browser"],
-      "paragraph":"Before you begin part 3 of the lab, you must complete parts 1 and 2. You won’t be able to do these exercises without having a functional RestService running on Tomcat. In part 3 you will create an integration test plan using SOAPUI, debug services in Tomcat, handle errors, create a war file, build the webpages and make a build script."
-
     },
-    "chapters": [
-
-      {
-        "id":1,
-        "title":"Create Integration Tests with SOAPUI",
-        "content":[
-          {"step":"Start SOAPUI",
-            "img":"./images/1.png"
-          },
-          {"step":"Select Projects, right click and select New Rest Project",
-            "img":"./images/step2.png"
-          },
-          {"step":"For the URI use http://localhost:8080/RestService/",
-            "img":"./images/step3.png"
-          },
-          {"step":"Click OK",
-            "img":"./images/step4.png"
-          },
-          {"step":"SOAPUI will generate a GET request",
-            "img":"./images/step5.png"
-          }
+    "ex3": {
+        "title": "Health Enrollment Lab Exercise Part 3",
+        "intro": {
+            "title": "Prerequisite Software",
+            "list": [
+                "JDK 1.8",
+                "Eclipse 4.6 or newer",
+                "MySQL 5.7 or newer",
+                "Tomcat 8.5",
+                "SourceTree 1.9",
+                "Chrome browser"
+            ],
+            "paragraph": "Before you begin part 3 of the lab, you must complete parts 1 and 2. You won’t be able to do these exercises without having a functional RestService running on Tomcat. In part 3 you will create an integration test plan using SOAPUI, debug services in Tomcat, handle errors, create a war file, build the webpages and make a build script."
+        },
+        "chapters": [
+            {
+                "id": 1,
+                "title": "Create Integration Tests with SOAPUI",
+                "content": [
+                    {
+                        "step": "Start SOAPUI",
+                        "img": "./images/1.png"
+                    },
+                    {
+                        "step": "Select Projects, right click and select New Rest Project",
+                        "img": "./images/step2.png"
+                    },
+                    {
+                        "step": "For the URI use http://localhost:8080/RestService/",
+                        "img": "./images/step3.png"
+                    },
+                    {
+                        "step": "Click OK",
+                        "img": "./images/step4.png"
+                    },
+                    {
+                        "step": "SOAPUI will generate a GET request",
+                        "img": "./images/step5.png"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Debugging the Services in Tomcat",
+                "content": []
+            },
+            {
+                "id": 3,
+                "title": "Error Handling",
+                "content": []
+            },
+            {
+                "id": 4,
+                "title": "Create a War file",
+                "content": []
+            },
+            {
+                "id": 5,
+                "title": "Testing Data Access",
+                "content": []
+            },
+            {
+                "id": 6,
+                "title": "Deploying the Application in Tomcat",
+                "content": []
+            },
+            {
+                "id": 7,
+                "title": "Create Webpages",
+                "content": []
+            }
         ]
-      },
-      {
-        "id":2,
-        "title":"Debugging the Services in Tomcat",
-        "content":[]
-      },
-      {
-        "id":3,
-        "title":"Error Handling",
-        "content":[]
-      },
-      {
-        "id":4,
-        "title":"Create a War file",
-        "content":[]
-      },
-      {
-        "id":5,
-        "title":"Testing Data Access",
-        "content":[]
-      },
-      {
-        "id":6,
-        "title":"Deploying the Application in Tomcat",
-        "content":[]
-      },
-      {
-        "id":7,
-        "title":"Create Webpages",
-        "content":[]
-      }
-    ]
-  }
-
+    }
 }

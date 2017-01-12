@@ -2,18 +2,23 @@ console.log('js');
 var myApp = angular.module('myApp',['xeditable']);
 myApp.controller('appController', ['$scope','$http',function($scope,$http){
   console.log('NG');
-// $scope.words = {
-//   hello:'hello',
-//   world:'earth'
+  $scope.edit=true;
+
+
+  $scope.update = function(){
+    console.log('the thing has been changed :\n', $scope.lesson);
+// var objToSend = {
+//     lesson:$scope.lesson,
+//
 // };
-// $scope.classes = {
-//   collapse:true
-// };
-  // $scope.toggleDropdown = function(el){
-  //   console.log('click works',el);
-  //   el.classes.collapse = !el.classes.collapse;
-  //
-  // };//toggleDropdown
+    $http({
+      method:'PUT',
+      url:'/jsonUpdate',
+      data:$scope.lesson
+    }).then(function(data){
+      console.log('success',data);
+    });
+  };
 
 
   $scope.getData = function(data){
@@ -33,3 +38,7 @@ myApp.controller('appController', ['$scope','$http',function($scope,$http){
 
 $scope.getData();
 }]);//appController
+
+myApp.run(function(editableOptions) {
+  editableOptions.theme = 'bs3'; // bootstrap3 theme. Can be also 'bs2', 'default'
+});
